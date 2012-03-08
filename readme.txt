@@ -1,7 +1,7 @@
 === RSS iTunes Redirection ===
-Contributors: floriansimeth (this should be a list of wordpress.org userid's)
+Contributors: floriansimeth
 Donate link: http://social2business.com
-Tags: itunes, rss, redirection, namespace, rss 2.0, podcast,
+Tags: itunes, rss, redirection, namespace, rss 2.0, podcast, redirect, apple, feed
 Requires at least: 3.3.1
 Tested up to: 3.3.1
 Stable tag: 0.1
@@ -23,6 +23,7 @@ If you have any further questions, please
 
 * add a comment on the plugins page [RSS iTunes Redirection](http://social2business.com/wordpress-plugins/itunes-rss-redirection/)
 * ask on [my Twitter Profile](http://twitter.com/floriansimeth)
+* or visit my german [Lifestyle Design](http://hangout-lifestyle.de) Page
 
 == Installation ==
 
