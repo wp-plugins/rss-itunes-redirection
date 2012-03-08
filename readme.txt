@@ -1,5 +1,5 @@
 === RSS iTunes Redirection ===
-Contributors: floriansimeth (this should be a list of wordpress.org userid's)
+Contributors: floriansimeth
 Donate link: http://social2business.com
 Tags: itunes, rss, redirection, namespace, rss 2.0, podcast, redirect, apple, feed
 Requires at least: 3.3.1
