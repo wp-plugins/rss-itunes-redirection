@@ -1,10 +1,10 @@
 === RSS iTunes Redirection ===
-Contributors: floriansimeth
-Donate link: http://social2business.com
+Contributors: wp-buddy
+Donate link: http://wp-buddy.com
 Tags: itunes, rss, redirection, namespace, rss 2.0, podcast, redirect, apple, feed
 Requires at least: 3.3.1
-Tested up to: 3.3.1
-Stable tag: 0.1
+Tested up to: 3.8
+Stable tag: 0.2
 
 If you want to change the url of an already submitted podcast (feed) in iTunes, this plugin will help you out.
 
@@ -14,16 +14,12 @@ If you are a podcaster and you already submitted a podcast to iTunes you will no
 
 The RSS iTunes Redirection Plugin will add the necessary namespace (if needed) and the special redirect-tag to your RSS 2.0 feed on Wordpress.
 
-The namespace is: xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd
-The redirect-tag is: <itunes:new-feed-url> [your new feed url] </itunes:new-feed-url>
+The namespace is: xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd"
+The redirect-tag is: &lt;itunes:new-feed-url&gt; [your new feed url] &lt;/itunes:new-feed-url&gt;
 
 Please read the FAQ for more information.
 
-If you have any further questions, please
-
-* add a comment on the plugins page [RSS iTunes Redirection](http://social2business.com/wordpress-plugins/itunes-rss-redirection/)
-* ask on [my Twitter Profile](http://twitter.com/floriansimeth)
-* or visit my german [Lifestyle Design](http://hangout-lifestyle.de) Page
+Please checkout my other WordPress plugins at [WP-Buddy.com](http://wp-buddy.com)
 
 == Installation ==
 
@@ -60,6 +56,10 @@ The error will also appear when you're using the redirection plugin without a na
 1. Isn't it easy? To redirect your podcast within iTunes, just fill this fields. Available languages: German, English
 
 == Changelog ==
+
+= 0.2 =
+* Some language updates
+* Made the plugin compatible with WP 3.8
 
 = 0.1 =
 * Possibility to add the namespace to the RSS 2.0 feed of Wordpress
