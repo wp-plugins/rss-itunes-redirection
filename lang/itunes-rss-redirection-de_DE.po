@@ -2,18 +2,18 @@ msgid ""
 msgstr ""
 "Project-Id-Version: RSS iTunes Redirection\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2013-12-12 09:56+0100\n"
-"PO-Revision-Date: 2013-12-12 09:56+0100\n"
+"POT-Creation-Date: 2014-12-23 11:33+0100\n"
+"PO-Revision-Date: 2014-12-23 11:34+0100\n"
 "Last-Translator: WP-Buddy <info@wp-buddy.com>\n"
-"Language-Team: Florian Simeth <florian.simeth@online.de>\n"
+"Language-Team: WP-Buddy <info@wp-buddy.com>\n"
 "Language: de_DE\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "X-Poedit-KeywordsList: _;__;_e\n"
 "X-Poedit-Basepath: .\n"
-"X-Poedit-SourceCharset: utf-8\n"
-"X-Generator: Poedit 1.6.2\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Generator: Poedit 1.7\n"
 "X-Poedit-SearchPath-0: ..\n"
 
 #: ../rss-itunes-redirection-class.php:23
@@ -37,27 +37,28 @@ msgstr ""
 "benötigt einen kleinen Code direkt im RSS-Feed um die Weiterleitung "
 "einzuleiten. Dieses Plugin hilft dir dabei."
 
-#: ../rss-itunes-redirection-class.php:72
+#: ../rss-itunes-redirection-class.php:74
+#: ../rss-itunes-redirection-class.php:109
 msgid "Check my feed with the W3C Feed Validator"
 msgstr "Meinen Feed auf Gültigkeit prüfen (W3C Feed Validator)"
 
-#: ../rss-itunes-redirection-class.php:85
+#: ../rss-itunes-redirection-class.php:88
 msgid "RSS iTunes Redirection Settings"
 msgstr "Einstellungen"
 
-#: ../rss-itunes-redirection-class.php:86
+#: ../rss-itunes-redirection-class.php:89
 msgid "New URL to redirect"
 msgstr "Neue Feed-URL"
 
-#: ../rss-itunes-redirection-class.php:87
+#: ../rss-itunes-redirection-class.php:90
 msgid "Add the namespace?"
 msgstr "Namespace hinzufügen?"
 
-#: ../rss-itunes-redirection-class.php:102
+#: ../rss-itunes-redirection-class.php:105
 msgid "Will add the namespace"
 msgstr "Folgender Namespace wird hinzugefügt"
 
-#: ../rss-itunes-redirection-class.php:106
+#: ../rss-itunes-redirection-class.php:109
 msgid ""
 "If you are using a podcast plugin please check if this plugin adds the "
 "namespace. If so, you do not need it again. If you are not using any of "
@@ -67,10 +68,10 @@ msgstr ""
 "Wenn du ein Podcast-Plugin benutzt, welches den Namespace <strong>xmlns:"
 "itunes=\"http://www.itunes.com/dtds/podcast-1.0.dtd\"</strong> zum Feed "
 "hinzufügt, brauchst du den Namespace nicht noch einmal hinzufügen. Wenn du "
-"kein Podcast-Plugin benutzt benötigst du den Namespace normalerweise schon. "
+"kein Podcast-Plugin benutzt, benötigst du den Namespace normalerweise schon. "
 "Öffne einfach deinen Feed und sehe nach, ob ein Fehler entsteht:"
 
-#: ../rss-itunes-redirection-class.php:107
+#: ../rss-itunes-redirection-class.php:110
 msgid ""
 "If you are using feedburner: Click on Troubleshootize -> Resync to update "
 "your feed on this platform as well."

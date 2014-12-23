@@ -3,8 +3,8 @@ Contributors: wp-buddy
 Donate link: http://wp-buddy.com
 Tags: itunes, rss, redirection, namespace, rss 2.0, podcast, redirect, apple, feed
 Requires at least: 3.3.1
-Tested up to: 3.8
-Stable tag: 0.2
+Tested up to: 4.1
+Stable tag: 0.2.1
 
 If you want to change the url of an already submitted podcast (feed) in iTunes, this plugin will help you out.
 
@@ -56,6 +56,9 @@ The error will also appear when you're using the redirection plugin without a na
 1. Isn't it easy? To redirect your podcast within iTunes, just fill this fields. Available languages: German, English
 
 == Changelog ==
+
+= 0.2.1 =
+* Updated some german translations
 
 = 0.2 =
 * Some language updates

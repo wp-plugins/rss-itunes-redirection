@@ -3,7 +3,7 @@
 Plugin Name: iTunes RSS Redirection
 Plugin URI: http://wp-buddy.com
 Description: A Plugin that redirects the current iTunes feed to another feed url.
-Version: 0.2
+Version: 0.2.1
 Author: wp-buddy
 Author URI: http://wp-buddy.com
 */
