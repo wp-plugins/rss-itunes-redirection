@@ -1,79 +1,72 @@
-=== Google Analytics Opt-Out ===
+=== RSS iTunes Redirection ===
 Contributors: wp-buddy
-Donate link: http://wp-buddy.com/products/plugins/google-analytics-opt-out/
-Tags: google analytics, analytics, analytics opt-out, analytics opt out
-Version: 0.1.3
-Requires at least: 3.7
-Stable tag: 0.1.3
+Donate link: http://wp-buddy.com
+Tags: itunes, rss, redirection, namespace, rss 2.0, podcast, redirect, apple, feed
+Version: 0.2.1
+Requires at least: 3.3.1
 Tested up to: 4.1
+Stable tag: 0.2.1
 License: GPLv2
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
-
-Provides an Opt-Out functionality for Google Analytics
+If you want to change the url of an already submitted podcast (feed) in iTunes, this plugin will help you out.
 
 == Description ==
 
-This plugin provides an Opt-Out functionality for Google Analytics by setting a cookie that prevents analytics.js to collect data.
+If you are a podcaster and you already submitted a podcast to iTunes you will notice that Apple does not provide a form where you can change your feed- or podcast url. Instead you have to use a special tag in your feed to change the url. 
 
-Works perfectly together with the [Yoast Analytics Plugin](http://wordpress.org/plugins/google-analytics-for-wordpress/ "Yoast Analytics Plugin").
+The RSS iTunes Redirection Plugin will add the necessary namespace (if needed) and the special redirect-tag to your RSS 2.0 feed on Wordpress.
 
-Please by the Pro Version of the [Google Analytics Opt Out WordPress Plugin](http://wp-buddy.com/products/plugins/google-analytics-opt-out/ "Google Analytics Opt Out WordPress Plugin") to even keep the free version up-to-date! Thanks!
+The namespace is: xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd"
+The redirect-tag is: &lt;itunes:new-feed-url&gt; [your new feed url] &lt;/itunes:new-feed-url&gt;
+
+Please read the FAQ for more information.
+
+Please checkout my other WordPress plugins at [WP-Buddy.com](http://wp-buddy.com)
 
 == Installation ==
 
-* Install and activate the plugin via your WordPress Administration panel
-* Go the "Settings" -> "Analytics Opt Out" and enter your UA-code (you don't need this step if Yoasts Analytics plugin is active)
-*
-* IMPORTANT: Check the sourcecode of your website and make sure that the Analytics code follows AFTER the opt-out code. Otherwise the Opt-Out feature will not work.
-* Read the FAQ for more information.
+This section describes how to install the plugin and get it working.
+
+1. Upload the folder `rss-itunes-redirection` to the `/wp-content/plugins/` directory
+1. Activate the plugin through the 'Plugins' menu in WordPress
+1. Go to Settings -> iTunes Redirect and change the redirection URL
 
 == Frequently Asked Questions ==
 
-= The opt-out code appears AFTER the Analytics code. What can I do? =
+= How do I install the plugin? =
 
-Use Yoasts Analytics plugin OR add the code manually:
+Please follow the steps on the "Installation" Page
 
-add this code to your themes functions.php:
-`<?php
-// This stops the plugin to integrate the JS into the header
-function my_gaoo_stop_head(){
-	return true;
-}
-add_filter('gaoo_stop_head', 'my_gaoo_stop_head');
-?>`
+= How can I stop redirection? =
 
-Then open your themes header.php and add the following code BEFORE your Analytics code AND between `<head>` and `</head>`:
-`<?php
-if ( function_exists( 'gaoo_js' ) ) {
-  // echos out the Javascript
-	gaoo_js();
-}
-?>`
+Just deactivate the plugin or remove the redirection url from the "New Feed URL"-field
 
+= My feed will not be redirected, what should I do? =
+
+It may take a while till iTunes picks up your new feed and changes the url to the new one.
+
+= I'm getting an error on my feed or Feedburner says that there is an error =
+
+Please check your feed with the W3C Feed Validator (http://validator.w3.org/feed/). If there is an error, you maybe activate or deactivate the namespace.
+
+If you activate the namespace please make sure that it's not already added to the feed from another podcast plugin. Double-Adding the namespace will cause the error.
+
+The error will also appear when you're using the redirection plugin without a namespace. In this case check your feed with the W3C Feed Validator mentioned above and test what works for you.
 
 == Screenshots ==
 
-1. The Opt-Out link can be added with this little button (shortcode)
-
-2. This is how the code looks like
-
-3. This is the settings page
+1. Isn't it easy? To redirect your podcast within iTunes, just fill this fields. Available languages: German, English
 
 == Changelog ==
 
-= 0.1.3 =
-* Made the plugin compatible with the latest version of the Google Analytics plugin by Yoast
+= 0.2.1 =
+* Updated some german translations
 
-= 0.1.2 =
-* Works again with the Google Analytics plugin by Yoast
-
-= 0.1.1 =
-* Fixed the issue that error message still shows shows up
-* Added/replaced some translations
-* Fixed an issue that Yoasts Analytics for WordPress plugin has changed the option name
+= 0.2 =
+* Some language updates
+* Made the plugin compatible with WP 3.8
 
 = 0.1 =
-* The first version
-
-== Upgrade Notice ==
+* Possibility to add the namespace to the RSS 2.0 feed of Wordpress
+* Possibility to add a special iTunes-Tag to the RSS 2.0 feed of Wordpress for redirection reasons
