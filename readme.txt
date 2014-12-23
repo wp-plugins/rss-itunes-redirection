@@ -2,9 +2,12 @@
 Contributors: wp-buddy
 Donate link: http://wp-buddy.com
 Tags: itunes, rss, redirection, namespace, rss 2.0, podcast, redirect, apple, feed
+Version: 0.2.1
 Requires at least: 3.3.1
 Tested up to: 4.1
 Stable tag: 0.2.1
+License: GPLv2
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
 If you want to change the url of an already submitted podcast (feed) in iTunes, this plugin will help you out.
 
