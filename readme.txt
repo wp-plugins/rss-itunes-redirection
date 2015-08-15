@@ -1,5 +1,5 @@
 === RSS iTunes Redirection ===
-Contributors: wp-buddy
+Contributors: wp-buddy, floriansimeth
 Donate link: http://wp-buddy.com
 Tags: itunes, rss, redirection, namespace, rss 2.0, podcast, redirect, apple, feed
 Version: 0.2.1
